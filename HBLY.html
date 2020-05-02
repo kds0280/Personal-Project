@@ -7,9 +7,8 @@
     <style>
         html {
             /*배경화면 빈틈없이 꽉차게 하는 법*/
-            background: url("image/bg5.jpg") no-repeat center center;
+            background: url("bg5.jpg") no-repeat center center;
             -webkit-background-size: cover;
-
         }
 
         .wrap {
@@ -64,15 +63,23 @@
         .columnList3 {
             display: inline-block;
             position: absolute;
-            padding-top: 40px;
+            padding-top: 0px;
         }
 
         .columnList1 {
             padding-left: 325px;
         }
 
+        .columnList1 li:hover {
+            text-decoration: underline;
+        }
+
         .columnList2 {
             left: 675px;
+        }
+
+        .columnList2 li:hover {
+            text-decoration: underline;
         }
 
         .columnList3 {
@@ -103,11 +110,54 @@
         }
 
         .copyright {
-            float: left;
+            display: inline-block;
+            position: absolute;
+            padding-left: 325px;
+            color: gray;
+            font-size: 13px;
         }
 
         .icon {
-            float: left;
+            display: inline-block;
+            position: absolute;
+            left: 1260px;
+        }
+
+        a {
+            display: block;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+        }
+
+        .face {
+            background: url("social_b_facebook.png") no-repeat;
+            right: 98px;
+        }
+
+        .face:hover {
+            background: url("social_b_facebook_hover.png") no-repeat;
+            right: 98px;
+        }
+
+        .twit {
+            background: url("social_b_twitter.png") no-repeat;
+            right: 128px;
+        }
+
+        .twit:hover {
+            background: url("social_b_twitter_hover.png") no-repeat;
+            right: 128px;
+        }
+
+        .instar {
+            background: url("social_b_instar.png") no-repeat;
+            right: 160px;
+        }
+
+        .instar:hover {
+            background: url("social_b_instar_hover.png") no-repeat;
+            right: 160px;
         }
     </style>
 </head>
@@ -156,9 +206,13 @@
                 (주)하이블리코퍼레이션 | 대표: 김하영 | 사엽자 등록번호:164-87-00179<br>
                 주소: 광주광역시 광산구 용봉로 77 전남대학교 8동 생활관<br>
                 개인정보 처리방침 | 서비스 이용 약관 <br><br>
-                @ 2020.HBLY Corp., Inc.All rights reserved
+                @ 2020.HBLY Corp., Inc.All rights reserved <br><br><br><br>
             </div>
-            <div class="icon"></div>
+            <div class="icon">
+                <div><a href="" class="face"></a></div>
+                <div><a href="" class="twit"></a></div>
+                <div><a href="" class="instar"></a></div>
+            </div>
         </footer>
     </section>
 </body>
